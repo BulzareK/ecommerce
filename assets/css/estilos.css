@@ -1,0 +1,119 @@
+body {
+  background-image: url(/assets/img/fondo.jpg);
+  font-family: "Kdam Thmor Pro", sans-serif;
+  display: grid;
+  height: 100%;
+  grid-template-areas:
+    "nav nav nav nav"
+    "sidebar main main main"
+    "footer footer footer footer";
+}
+
+/* TITULO */
+nav {
+  grid-area: nav;
+  text-align: center;
+  padding: 5px;
+  background-color: orangered;
+}
+
+/* CATEGORIAS */
+sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid black;
+  padding-left: 100px;
+}
+
+sidebar h3,
+h4 {
+  margin-left: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* PRODUCTOS*/
+main {
+  grid-area: main;
+  padding: 5px;
+  margin: auto;
+}
+
+main .grid-container {
+  display: grid;
+  grid-template-areas: "auto auto auto";
+  gap: 80px;
+}
+
+main .img1 {
+  grid-area: img1;
+}
+main .img2 {
+  grid-area: img2;
+}
+main .img3 {
+  grid-area: img3;
+}
+main .img4 {
+  grid-area: img4;
+}
+main .img5 {
+  grid-area: img5;
+}
+main .img6 {
+  grid-area: img6;
+}
+
+img {
+  width: 14em;
+  height: 15em;
+  border-radius: 0.5em;
+}
+
+.producto {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.5em;
+  padding: 15px;
+  background-color: bisque;
+  border: 1px solid black;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #da7e06;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+button:hover {
+  background-color: #772d10;
+}
+
+button:active {
+  background-color: #772d10;
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+}
+
+/* FOOTER */
+footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 5px;
+  font-size: 80%;
+  background-color: orangered;
+}
